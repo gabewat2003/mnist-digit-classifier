@@ -1,0 +1,108 @@
+{
+    "logistic": {
+        "pca_components": 50,
+        "params": {
+            "C": 10.0
+        },
+        "train_time_s": 1.56,
+        "predict_time_s": 0.02,
+        "test_accuracy": 91.18,
+        "top_confusions": [
+            {
+                "true": 5,
+                "pred": 3,
+                "count": 48
+            },
+            {
+                "true": 2,
+                "pred": 8,
+                "count": 41
+            },
+            {
+                "true": 9,
+                "pred": 4,
+                "count": 37
+            }
+        ]
+    },
+    "knn": {
+        "pca_components": 50,
+        "params": {
+            "n_neighbors": 1
+        },
+        "train_time_s": 0.39,
+        "predict_time_s": 0.47,
+        "test_accuracy": 97.34,
+        "top_confusions": [
+            {
+                "true": 4,
+                "pred": 9,
+                "count": 20
+            },
+            {
+                "true": 3,
+                "pred": 5,
+                "count": 17
+            },
+            {
+                "true": 9,
+                "pred": 4,
+                "count": 12
+            }
+        ]
+    },
+    "rf": {
+        "pca_components": 50,
+        "params": {
+            "max_depth": null,
+            "n_estimators": 200
+        },
+        "train_time_s": 11.76,
+        "predict_time_s": 0.1,
+        "test_accuracy": 95.62,
+        "top_confusions": [
+            {
+                "true": 4,
+                "pred": 9,
+                "count": 24
+            },
+            {
+                "true": 9,
+                "pred": 4,
+                "count": 21
+            },
+            {
+                "true": 7,
+                "pred": 9,
+                "count": 19
+            }
+        ]
+    },
+    "svm": {
+        "pca_components": 50,
+        "params": {
+            "C": 5.0,
+            "gamma": "scale"
+        },
+        "train_time_s": 15.87,
+        "predict_time_s": 8.42,
+        "test_accuracy": 98.68,
+        "top_confusions": [
+            {
+                "true": 7,
+                "pred": 2,
+                "count": 8
+            },
+            {
+                "true": 9,
+                "pred": 3,
+                "count": 7
+            },
+            {
+                "true": 2,
+                "pred": 8,
+                "count": 6
+            }
+        ]
+    }
+}
